@@ -1,0 +1,38 @@
+<mvc:View controllerName="northwind.controller.view2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <Title text="This is a second page"></Title>
+
+     <VBox class="sapUiSmallMargin">
+      <Text text="Region ID:" />
+      <Text text="{RegionID}" />
+
+      <Text text="Region Description:" />
+      <Text text="{RegionDescription}" />
+    </VBox>
+
+    <HBox >
+    <Text text="Region ID"></Text>
+    <Text text="{RegionID}"></Text>
+    </HBox>
+
+  <Table >
+  <columns>
+  <Column >
+  <Text text="Reion id"></Text>
+  </Column>
+    <Column >
+  <Text text="Reion DESC"></Text>
+  </Column>
+  </columns>
+  <items>
+  <ColumnListItem >
+  <Text text="{RegionID}"></Text>
+    <Text text="{RegionDescription}"></Text>
+  </ColumnListItem>
+  </items>
+  </Table>
+
+    </Page>
+</mvc:View>
